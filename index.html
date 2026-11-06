@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кулинарные скитания в параллельном мире</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:
+        radial-gradient(circle at top, #382052, transparent 50%),
+        #10091f;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    min-height: 100vh;
+}
+
+/* ШАПКА */
+
+header {
+    text-align: center;
+    padding: 80px 20px 65px;
+    border-bottom: 1px solid #49335e;
+}
+
+.subtitle {
+    color: #ffd58a;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: clamp(35px, 6vw, 68px);
+    line-height: 1.2;
+    text-shadow: 0 0 30px #a66bd0;
+}
+
+h1 span {
+    display: block;
+    color: #efa5d7;
+}
+
+.slogan {
+    margin: 25px auto 0;
+    color: #c9b7dc;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+/* ОСНОВНОЙ БЛОК */
+
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 20px 90px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 35px;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* КАРТОЧКИ */
+
+.card {
+    background: linear-gradient(145deg, #302044, #1c122c);
+    border: 1px solid #624477;
+    border-radius: 25px;
+    padding: 25px;
+    text-align: center;
+    transition: .4s;
+    animation: appear 1s ease both;
+}
+
+.card:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: .4s;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    border-color: #efa5d7;
+    box-shadow: 0 15px 40px #a65bd344;
+}
+
+.image {
+    height: 190px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #604477, #261536);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 95px;
+    margin-bottom: 25px;
+    transition: .4s;
+}
+
+.card:hover .image {
+    transform: scale(1.04);
+}
+
+h2 {
+    font-family: 'Russo One', sans-serif;
+    color: #ffd58a;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #c8b9d8;
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 14px;
+    border-radius: 30px;
+    background: #583c6b;
+    color: #f4c4e5;
+    font-size: 11px;
+}
+
+/* ПОДВАЛ */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 1px solid #49335e;
+    background: #0b0615;
+    color: #c9b7dc;
+}
+
+footer h3 {
+    color: #ffd58a;
+    margin-bottom: 15px;
+}
+
+footer a {
+    color: #efa5d7;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* АНИМАЦИИ */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ТЕЛЕФОН */
+
+@media (max-width: 800px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        padding: 55px 15px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="subtitle">✦ FANTASY • MAGIC • COOKING ✦</div>
+
+    <h1>
+        Кулинарные скитания
+        <span>в параллельном мире</span>
+    </h1>
+
+    <p class="slogan">
+        Когда магия встречается с кулинарией,
+        даже самые опасные монстры просят добавки!
+    </p>
+</header>
+
+<main>
+
+    <h2 class="section-title">
+        ✧ Главные персонажи ✧
+    </h2>
+
+    <div class="cards">
+
+        <!-- МУКОУДА -->
+
+        <div class="card">
+            <div class="image">🍳</div>
+
+            <h2>Мукоуда Цуёси</h2>
+
+            <p>
+                Обычный парень из современного мира,
+                который попадает в фантастическое
+                королевство. Его уникальный навык —
+                «Интернет-супермаркет».
+                Он умеет готовить невероятно вкусную еду,
+                которая удивляет даже жителей
+                другого мира.
+            </p>
+
+            <div class="tag">
+                ✨ Главный герой
+            </div>
+        </div>
+
+        <!-- ФЭЛ -->
+
+        <div class="card">
+            <div class="image">🐺</div>
+
+            <h2>Фэл</h2>
+
+            <p>
+                Могучий легендарный волк,
+                обладающий невероятной силой.
+                Он становится спутником Мукоуды.
+                Фэл обожает вкусную еду,
+                особенно блюда, приготовленные
+                его новым хозяином.
+            </p>
+
+            <div class="tag">
+                ⚔️ Легендарный зверь
+            </div>
+        </div>
+
+        <!-- СУИ -->
+
+        <div class="card">
+        <div class="image">💧</div>
+
+            <h2>Суи</h2>
+
+            <p>
+                Маленький и милый слизень,
+                который присоединяется к путешествию.
+                Несмотря на свой размер,
+                Суи обладает необычными способностями
+                и становится важным членом
+                команды.
+            </p>
+
+            <div class="tag">
+                💜 Маленькое чудо
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <h3>✦ Спасибо за путешествие! ✦</h3>
+
+    <p>
+        Почта:
+        <a href="mailto:your-email@example.com">
+           akerkeabyz@gmail.com
+        </a>
+    </p>
+
+    <p>
+        Фан-сайт аниме «Кулинарные скитания
+        в параллельном мире»
+    </p>
+</footer>
+Советую посмотреть, очень интересное аниме!
+</body>
+</html>
